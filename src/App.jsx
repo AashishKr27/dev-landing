@@ -2,6 +2,9 @@ import FeatureSection from "./componetnts/FeatureSection";
 import HeroSection from "./componetnts/HeroSection";
 import NavBar from "./componetnts/NavBar";
 import Workflow from "./componetnts/Workflow";
+import Pricing from "./componetnts/Pricing"
+import Testimonials from "./componetnts/Testimonials";
+import Footer from "./componetnts/Footer";
 
 function App() {
   return (
@@ -11,6 +14,9 @@ function App() {
         <HeroSection />
         <FeatureSection />
         <Workflow />
+        <Pricing />
+        <Testimonials />
+        <Footer />
       </div>
     </>
   );
