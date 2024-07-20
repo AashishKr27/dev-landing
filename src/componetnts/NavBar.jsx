@@ -4,6 +4,7 @@ import logo from "../assets/logo.png";
 import { navItems } from "../constants";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -26,9 +27,17 @@ const NavBar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={navItems.href} className="">
+                <Link
+                  to={item.to}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className="cursor-pointer"
+                >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -54,7 +63,17 @@ const NavBar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li className="py-4" key={index}>
-                  <a href={item.href}>{item.label}</a>
+                  <Link
+                  to={item.to}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className="cursor-pointer"
+                >
+                  {item.label}
+                </Link>
                 </li>
               ))}
             </ul>

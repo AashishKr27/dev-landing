@@ -4,7 +4,7 @@ import { testimonials } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className="mt-10 tracking-wide">
+    <div id="monial" className="mt-10 tracking-wide">
       <h2 className="text-3xl sm:text-5xl lg:text-6xl h-20 text-center my-10 lg:my-20 bg-gradient-to-r from-cyan-300 to-blue-700 text-transparent bg-clip-text">
         What people are saying?
       </h2>

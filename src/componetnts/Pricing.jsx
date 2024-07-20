@@ -3,8 +3,8 @@ import { pricingOptions } from "../constants";
 
 const Pricing = () => {
   return (
-    <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
+    <div id="price" className="mt-20">
+      <h2 className="text-3xl sm:text-5xl h-16 lg:text-6xl text-center my-8 font-semibold tracking-tight bg-gradient-to-r from-cyan-300 to-blue-900 text-transparent bg-clip-text">
         Pricing
       </h2>
       <div className="flex flex-wrap">
